@@ -98,7 +98,6 @@ const register =() =>{
 .logInfo h2{
     width: fit-content;
     color:rgb(53, 53, 135);
-    border-bottom:3px solid rgb(53, 53, 135) ;
     margin-bottom: 30px;
     letter-spacing: 1.5px;
 }
