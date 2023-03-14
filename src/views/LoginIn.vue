@@ -163,4 +163,9 @@ label{
     object-fit: cover;
 }
 }
+@media (max-width: 392px) {
+    .form-control{
+    width: 250px;
+}
+}
 </style>
