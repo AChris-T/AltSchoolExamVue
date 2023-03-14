@@ -196,5 +196,14 @@ form{
     width:50vh;
 }
 }
+@media (max-width: 392px) {
+    .form-control, .form-controls{
+    width: 250px;
+    margin-right: 30px;
+}
+.log-btn{
+    width:40vh;
+}
+}
 
 </style>
