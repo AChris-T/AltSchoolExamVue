@@ -202,16 +202,24 @@ form{
     }
     .form-control{
     width: 250px;
-    margin-right: 70px; 
+    margin-right: 60px;
+    margin-left: 40px; 
+    }
+    label{
+        margin-left: 40px; 
     }
     .form-controls{
     width: 250px;
+    margin-left: 40px; 
     margin-right: 30px;
 }
 .log-btn{
+    margin-left: 40px; 
     width:40vh;
 }
 .log-det{
+    margin-left: 40px; 
+    width: max-content;
     margin-right: 100px;
 }
 }

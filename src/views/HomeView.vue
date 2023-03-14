@@ -4,7 +4,7 @@
         <div class="home_btn">
             <div class="home-details">
                 <h1>Discover Products <br>for a life well lived</h1>
-                <a href="/login" class="button">Get Started</a>
+                <a href="/login" class="button">Get Products</a>
                 <h6>Limited Qualities available</h6>
             </div>
         </div>
@@ -25,6 +25,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         color:rgb(61, 56, 56);
+        overflow: hidden;
         
        
     }
@@ -56,4 +57,23 @@
         letter-spacing:1.5px;
         color: white;
     }
+    @media (max-width: 382.99px) {
+        .home-details h1{
+            font-size: 24px;
+        margin-bottom:30px;
+    }
+        .button{
+            padding: 10px 60px;
+        }
+    }
+       @media (max-width: 312px) {
+        .home-details h1{
+            font-size: 20px;
+        margin-bottom:30px;
+    }
+        .button{
+            padding: 10px 40px;
+        }
+    }
+    
 </style>

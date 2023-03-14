@@ -44,6 +44,7 @@ const handleSignOut = () => {
   border-bottom:2px solid #f8f8f8;
   width: 100%;
   height: 65px;
+  overflow: hidden;
 }
 .nav-container{
   display: flex;
@@ -107,6 +108,9 @@ const handleSignOut = () => {
   }
 }
 @media (max-width: 392px) {
+  .navinfo a:nth-child(1){
+    display: none;
+  }
   .nav-container{
     margin: 20px 10px;
   }
