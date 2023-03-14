@@ -197,12 +197,22 @@ form{
 }
 }
 @media (max-width: 392px) {
-    .form-control, .form-controls{
+    .logInfo h2{
+        margin-right: 60px;
+    }
+    .form-control{
+    width: 250px;
+    margin-right: 70px; 
+    }
+    .form-controls{
     width: 250px;
     margin-right: 30px;
 }
 .log-btn{
     width:40vh;
+}
+.log-det{
+    margin-right: 100px;
 }
 }
 
