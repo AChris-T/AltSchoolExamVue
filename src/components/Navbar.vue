@@ -1,7 +1,7 @@
 <template> <div class="nav-bar">
     <div class="nav-container">
         <div class="logo">
-         <a href="/"><h3>Home.</h3></a> 
+         <a href="/"><h3>Home.love</h3></a> 
         </div>
         <div class="navinfo">
           <a href="/user">Product</a>
