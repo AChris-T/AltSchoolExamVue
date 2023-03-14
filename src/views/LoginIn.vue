@@ -9,7 +9,7 @@
                 <h2>Login</h2>
                 <form >
                 <div class="log-details">
-                    <label>UserEmail</label>
+                    <label>Email</label>
                     <input type="email" class="form-control" v-model="email" placeholder="Email"/>
                 </div>
                 <div class="log-details">
