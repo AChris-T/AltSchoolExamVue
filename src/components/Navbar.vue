@@ -66,7 +66,7 @@ const handleSignOut = () => {
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: -10px;
+  margin-top: -5px;
   text-decoration: none;
   line-height: 0.5;
   font-weight: 400;
@@ -96,6 +96,12 @@ const handleSignOut = () => {
   }
   .navinfo{
     gap: 25px;
+  }
+}
+@media (max-width: 392px) {
+  .navinfo{
+    gap: 14px;
+    font-size: 5px;
   }
 }
 </style>  
