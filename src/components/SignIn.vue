@@ -138,14 +138,14 @@ label{
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    background-color: blue;
+    background-color: tomato;
     border: none;
     border-radius: 2px;
     color: rgba(240, 248, 255, 0.833);
     margin-bottom: 10px;
 }
 .log-btn:hover{
-    background-color: rgb(36, 36, 198);
+    background-color: rgb(240, 87, 60);
 }
 .log-det{
     font-size: 12px;

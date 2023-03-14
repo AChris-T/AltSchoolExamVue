@@ -16,11 +16,11 @@
                     <label>Password</label>
                     <input type="Password" class="form-control" v-model="password" placeholder="Password"/>
                 </div>
-                
-                <button class="log-btn" @click="register"> Login</button>     
             </form>
-
-            <span ><a href="" class="log-forget">Forget password</a></span>
+                <div class="log-btns">
+                    <button class="log-btn" @click="register"> Login</button>     
+                    <span ><a href="" class="log-forget">Forget password</a></span>
+                </div>
             </div>
         </div>
     </div>
@@ -129,19 +129,32 @@ label{
 .form-control:focus{
     outline: none;
 }
+.log-btns{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
 .log-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 150px;
     height: 40px;
     font-size: 20px;
     cursor: pointer;
     margin-bottom: 20px;
-    background-color: blue;
+    background-color:tomato;
     border: none;
     border-radius: 2px;
     color: rgba(240, 248, 255, 0.833);
 }
 .log-btn:hover{
-    background-color: rgb(36, 36, 198);
+    background-color: rgb(235, 94, 70);
+}
+.log-forget{
+    text-decoration: none;
 }
 /*Responsive */
 @media (max-width: 920px) {

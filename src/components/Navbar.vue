@@ -1,7 +1,7 @@
 <template> <div class="nav-bar">
     <div class="nav-container">
         <div class="logo">
-         <a href="/"><h3>Home.</h3></a> 
+         <h3>Chris.</h3>
         </div>
         <div class="navinfo">
           <a href="/user">Product</a>
@@ -43,19 +43,19 @@ const handleSignOut = () => {
   position: relative;
   border-bottom:2px solid #f8f8f8;
   width: 100%;
-  height: 40px;
+  height: 65px;
 }
 .nav-container{
   display: flex;
   align-items: center;
   margin: 20px 70px;
-  top: 0;
   justify-content: space-between;
 }
-.logo a{
+.logo h3{
   text-decoration: none;
   color: #2b3b52;
-  font-size: 20px;
+  font-size: 25px;
+  cursor:default;
 }
 .navinfo{
   display: flex;
@@ -66,7 +66,7 @@ const handleSignOut = () => {
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: -5px;
+
   text-decoration: none;
   line-height: 0.5;
   font-weight: 400;
@@ -74,6 +74,14 @@ const handleSignOut = () => {
   border-bottom: 3px solid transparent;
   transition: .4s;
   font-size: 17px;
+}
+.navinfo a:nth-child(2){
+  width: fit-content;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: tomato;
+  border: none;
+  color: #f8f8f8;
 }
 .navinfo a:nth-child(3){
   width: fit-content;
@@ -83,7 +91,7 @@ const handleSignOut = () => {
   border: none;
   color: #f8f8f8;
 }
-.navinfo a:nth-child(3):hover{
+.navinfo a:nth-child(3):hover,.navinfo a:nth-child(2):hover{
   background-color: rgb(201, 70, 46);
 }
 .navinfo a:hover{

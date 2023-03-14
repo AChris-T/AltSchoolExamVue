@@ -4,7 +4,7 @@
         <div class="home_btn">
             <div class="home-details">
                 <h1>Discover Products <br>for a life well lived</h1>
-                <button><a href="/login">Get Started</a></button>
+                <a href="/login" class="button">Get Started</a>
                 <h6>Limited Qualities available</h6>
             </div>
         </div>
@@ -44,14 +44,13 @@
         padding: 30px;
         width: fit-content;
     }
-    button{
-        margin-top: 40px;
-        height: 50px;
-        border: none;
-        width: 290px;
-        background-color: tomato;
+    .home-details h1{
+        margin-bottom:30px;
     }
-    button a{
+    .button{
+        padding: 10px 95px;
+        border: none;
+        background-color: tomato;
         text-decoration: none;
         font-size: 17px;
         letter-spacing:1.5px;
