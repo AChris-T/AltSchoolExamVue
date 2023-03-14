@@ -1,7 +1,7 @@
 <template> <div class="nav-bar">
     <div class="nav-container">
         <div class="logo">
-         <h3>Chris.</h3>
+         <a href="/"><h3>Chris.</h3></a>
         </div>
         <div class="navinfo">
           <a href="/user">Product</a>
@@ -51,6 +51,9 @@ const handleSignOut = () => {
   align-items: center;
   margin: 20px 70px;
   justify-content: space-between;
+}
+.logo a{
+  text-decoration: none;
 }
 .logo h3{
   text-decoration: none;
