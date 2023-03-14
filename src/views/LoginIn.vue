@@ -166,6 +166,10 @@ label{
 @media (max-width: 392px) {
     .form-control{
     width: 250px;
+    margin-right: 30px;
+}
+.logInfo h2{
+    margin-right: 30px;
 }
 }
 </style>
