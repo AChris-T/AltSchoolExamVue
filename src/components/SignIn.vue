@@ -196,12 +196,12 @@ form{
     width:50vh;
 }
 }
-@media (max-width: 392px) {
+@media (max-width: 414px) {
     .logInfo h2{
         margin-right: 60px;
     }
     .form-control{
-    width: 250px;
+    width: 270px;
     margin-right: 60px;
     margin-left: 40px; 
     }
@@ -209,13 +209,67 @@ form{
         margin-left: 40px; 
     }
     .form-controls{
-    width: 250px;
+    width: 270px;
     margin-left: 40px; 
     margin-right: 30px;
 }
 .log-btn{
     margin-left: 40px; 
-    width:40vh;
+    width:30vh;
+}
+.log-det{
+    margin-left: 40px; 
+    width: max-content;
+    margin-right: 100px;
+}
+}
+@media (max-width: 390px) {
+    .logInfo h2{
+        margin-right: 60px;
+    }
+    .form-control{
+    width: 250px;
+    margin-right: 60px;
+    margin-left: 30px; 
+    }
+    label{
+        margin-left: 30px; 
+    }
+    .form-controls{
+    width: 250px;
+    margin-left: 30px; 
+    margin-right: 30px;
+}
+.log-btn{
+    margin-left: 40px; 
+    width:30vh;
+}
+.log-det{
+    margin-left: 40px; 
+    width: max-content;
+    margin-right: 100px;
+}
+}
+@media (max-width: 290px) {
+    .logInfo h2{
+        margin-right: 60px;
+    }
+    .form-control{
+    width: 200px;
+    margin-right: 60px;
+    margin-left: 30px; 
+    }
+    label{
+        margin-left: 30px; 
+    }
+    .form-controls{
+    width: 200px;
+    margin-left: 30px; 
+    margin-right: 30px;
+}
+.log-btn{
+    margin-left: 30px; 
+    width:30vh;
 }
 .log-det{
     margin-left: 40px; 

@@ -184,4 +184,25 @@ label{
     margin-right: 30px;
 }
 }
+@media (max-width: 290px) {
+    .form-control{
+    width: 200px;
+    margin-right: 60px;
+    margin-left: 30px; 
+    }
+    label{
+        margin-left: 30px; 
+    }
+    .form-controls{
+    width: 200px;
+    margin-left: 30px; 
+    margin-right: 30px;
+}
+.log-btn{
+  margin-right: 30px;
+}
+.log-forget{
+    margin-right: 30px;
+}
+}
 </style>
