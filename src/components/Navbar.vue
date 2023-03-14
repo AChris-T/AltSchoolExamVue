@@ -99,6 +99,9 @@ const handleSignOut = () => {
   }
 }
 @media (max-width: 392px) {
+  .nav-container{
+    margin: 20px 10px;
+  }
   .navinfo{
     gap: 10px;
     font-size: 5px;
