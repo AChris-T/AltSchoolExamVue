@@ -1,7 +1,7 @@
 <template> <div class="nav-bar">
     <div class="nav-container">
         <div class="logo">
-         <a href="/"><h3>Home.love</h3></a> 
+         <a href="/"><h3>Home.</h3></a> 
         </div>
         <div class="navinfo">
           <a href="/user">Product</a>
@@ -100,7 +100,7 @@ const handleSignOut = () => {
 }
 @media (max-width: 392px) {
   .navinfo{
-    gap: 14px;
+    gap: 10px;
     font-size: 5px;
   }
 }
