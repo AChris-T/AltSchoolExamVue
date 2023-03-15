@@ -1,5 +1,35 @@
 <template>
-  <div class="table-wrapper"  >
+    <div class="user-containers">
+        <div class="user-container" v-for="post in posts" :key="post.id">
+            <div class="subcontainer" >
+                <img :src="post.thumbnail" alt="" class='containerimage'>
+                <div class="products-details">
+                    <div class="product-detail">
+                        <h5>{{ post.title }} </h5>
+                   </div>
+                   <div class="product-detail">
+                        <h5>Brand: {{ post.brand }}</h5>
+                    </div>
+                    <div class="product-detail">
+                        <h5>{{ post.description }}</h5>
+                    </div>
+                    <div class="product-detail">
+                        <h3>${{ post.price }}</h3>
+                    </div>
+                    <div class="product-detail">
+                        <h5>Discount: {{ post.discountPercentage }}</h5>
+                    </div>
+                    <div class="product-detail">
+                        <h5>rating: {{ post.rating }}</h5>
+                    </div>
+                    <div class="product-detail">
+                        <h5>stock: {{ post.stock }}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- <div class="table-wrapper"  >
     <table class="fl-table" >
         <thead>
         <tr >
@@ -31,7 +61,7 @@
     </table>
     </div>
   <div>
-</div>
+</div> -->
 
 </template>
 
@@ -61,11 +91,123 @@ export default {
 </script>
  
 <style scoped>
-.table-wrapper{
-    margin: 10px 70px 70px;
-    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+.user-containers{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.user-container{
+   width: 250px;
+   margin: 30px 25px 15px;
+   box-shadow: 0px 5px 100px rgba(93, 86, 86, 0.2);
+}
+.subcontainer{
+    margin: 20px;
+}
+.containerimage{
+    width: 100%;
+    height: 150px;
+    padding-bottom: 30px;
+    object-fit: contain;
+}
+.product-detail{
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 1030px) {
+.user-containers{
+    grid-template-columns: 1fr 1fr 1fr;
 
+}
+}
+@media (max-width: 900px) {
+.user-containers{
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.user-container{
+   width: 250px;
+   margin: 30px 5px 15px;
+}
+}
+@media (max-width: 800px) {
+.user-containers{
+    grid-template-columns: 1fr 1fr;
+
+}
+.user-container{
+   width: 250px;
+   margin: 30px 50px 15px;
+}
+}
+@media (max-width: 700px) {
+.user-containers{
+    grid-template-columns: 1fr 1fr;
+
+}
+.user-container{
+   width: 250px;
+   margin: 30px 20px 15px;
+}
+}
+@media (max-width: 590px) {
+.user-containers{
+    grid-template-columns: 1fr 1fr;
+
+}
+.user-container{
+   width: 250px;
+   margin: 30px 10px 15px;
+}
+}
+@media (max-width: 564px) {
+.user-containers{
+    grid-template-columns: 1fr;
+
+}
+.user-container{
+    width: 400px;
+   margin: 30px 50px 15px;
+}
+}
+@media (max-width: 490px) {
+.user-containers{
+    grid-template-columns: 1fr;
+
+}
+.user-container{
+    width: 350px;
+   margin: 30px 50px 15px;
+}
+}
+@media (max-width: 430px) {
+.user-containers{
+    grid-template-columns: 1fr;
+
+}
+.user-container{
+    width: 300px;
+   margin: 30px 50px 15px;
+}
+}
+@media (max-width: 385px) {
+.user-containers{
+    grid-template-columns: 1fr;
+
+}
+.user-container{
+    width: 250px;
+   margin: 30px 50px 15px;
+}
+}
+@media (max-width: 330px) {
+.user-containers{
+    grid-template-columns: 1fr;
+
+}
+.user-container{
+    width: 200px;
+   margin: 30px 50px 15px;
+}
 .fl-table {
     border-radius: 5px;
     font-size: 12px;
@@ -76,6 +218,7 @@ export default {
     max-width: 100%;
     white-space: nowrap;
     background-color: white;
+}
 }
 
 .fl-table td, .fl-table th {

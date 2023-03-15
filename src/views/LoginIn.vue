@@ -181,7 +181,7 @@ label{
     margin-right: 30px;
 }
 .logInfo h2{
-    margin-right: 30px;
+    margin-right: 40px;
 }
 }
 @media (max-width: 290px) {
