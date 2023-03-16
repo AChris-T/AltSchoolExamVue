@@ -6,16 +6,16 @@
             </div>
             <div class="logInfo">
                 <h2>Create Account</h2>
-                <form>
+                <form @submit.prevent="register">
                 <div class="log-details">
                     <div class="name-details">
                         <div class="name-detail">
                             <label>First Name</label>
-                            <input type="text" class="form-control" placeholder="First Name" v-model="first_name" required/>
+                            <input type="text" class="form-control" placeholder="First Name" required/>
                         </div>
                         <div class="name-detail">
                             <label>Last Name</label>
-                            <input type="text" class="form-control" placeholder="Last Name" v-model="last_name" required/>
+                            <input type="text" class="form-control" placeholder="Last Name"  required/>
                         </div>
                     </div>
                 </div>
@@ -41,15 +41,14 @@ import { getAuth, createUserWithEmailAndPassword} from 'firebase/auth'
 import { useRouter } from 'vue-router'
 const email = ref('');
 const password =ref ('')
-const first_name =ref ('')
-const last_name =ref ('')
 const router = useRouter()
 
 const register =() =>{
-    createUserWithEmailAndPassword(getAuth(), email.value, password.value, first_name.value,last_name.value )
+    createUserWithEmailAndPassword(getAuth(), email.value, password.value )
     .then((data) => {
         console.log("successfully registered")
         router.push('/user')
+        alert("successfully registered")
     })
     .catch((error) => {
         console.log(error.code); 
