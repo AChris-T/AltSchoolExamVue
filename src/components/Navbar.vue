@@ -6,7 +6,7 @@
         <div class="navinfo">
           <a href="/user">Product</a>
           <a href="/login" v-if="!isLoggedIn">Login</a>
-          <a href="/signin" v-if="!isLoggedIn">Sign in</a>
+          <a href="/signin" v-if="!isLoggedIn">Sign up</a>
           <a href='' @click="handleSignOut" v-if="isLoggedIn">Logout</a>
         </div>
     </div>  

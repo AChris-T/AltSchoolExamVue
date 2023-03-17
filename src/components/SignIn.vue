@@ -1,9 +1,6 @@
 <template>
      <div class="login">
         <div class="log-container">
-            <div class="log-con">
-                <img src="../assets/sale.jpg" alt="" />
-            </div>
             <div class="logInfo">
                 <h2>Create Account</h2>
                 <form @submit.prevent="register">
@@ -66,23 +63,18 @@ const register =() =>{
     display: flex;
     flex-direction: row;
     height: 90vh;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
 }
 .log-con{
     flex: 1;   
-}
-.log-con img{
-    width:100%;
-    margin-top:120px;
-    padding: 20px;
-    object-fit: cover;
-}
-.logInfo{
-    flex: 1;
 }
 .logInfo{
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+    justify-items: center;
     justify-content: center;
 }
 .logInfo h2{
@@ -156,16 +148,13 @@ label{
 }
 /*Responsive */
 @media (max-width: 930px) {
-.log-con{
-    display: none;
-}
 .logInfo{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 }
-@media (max-width: 466px) {
+@media (max-width: 486px) {
 .log-con{
     display: none;
 }
@@ -249,7 +238,7 @@ form{
     margin-right: 100px;
 }
 }
-@media (max-width: 290px) {
+@media (max-width: 325.99px) {
     .logInfo h2{
         margin-right: 60px;
     }

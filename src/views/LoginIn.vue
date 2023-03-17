@@ -1,9 +1,6 @@
 <template>
      <div class="login">
         <div class="log-container">
-            <div class="log-con">
-                <img src="../assets/sale.jpg" alt="" />
-            </div>
             <div class="logInfo">
                 <p v-if="errMsg" class="Error"> {{ errMsg }} </p>
                 <h2>Login</h2>
@@ -73,27 +70,24 @@ const register =() =>{
     display: flex;
     flex-direction: row;
     height: 90vh;
+    justify-content: center;
 }
 .log-con{
     display: flex;
     flex: 1;  
-    align-items: center;
-    justify-content: center; 
 }
 .log-con img{
     width:100%;
-
     padding: 20px;
     object-fit: cover;
-}
-.logInfo{
-    flex: 1;
 }
 .logInfo{
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+    align-items: center;
     justify-content: center;
+    justify-items: center;
 }
 .logInfo h2{
     width: fit-content;
@@ -157,9 +151,6 @@ label{
 }
 /*Responsive */
 @media (max-width: 920px) {
-.log-con{
-    display: none;
-}
 .logInfo{
     display: flex;
     align-items: center;
