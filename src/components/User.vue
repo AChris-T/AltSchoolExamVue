@@ -29,13 +29,17 @@
             </div>
         </div>
     </div>
+    <Footer/>
 </template>
 
 
 <script >
+import Footer from '../components/Footer.vue';
 import axios from "axios"
 
+
 export default {
+  components: { Footer },
   name:'User',
   data(){
     return{
