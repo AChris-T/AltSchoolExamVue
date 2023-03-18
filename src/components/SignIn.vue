@@ -259,11 +259,11 @@ form{
     margin-right: 30px;
 }
 .log-btn{
-    margin-left: 30px; 
+    margin-left: 35px; 
     width:30vh;
 }
 .log-det{
-    margin-left: 40px; 
+    margin-left: 60px; 
     width: max-content;
     margin-right: 100px;
 }
