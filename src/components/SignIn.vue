@@ -67,15 +67,10 @@ const register =() =>{
     justify-items: center;
     justify-content: center;
 }
-.log-con{
-    flex: 1;   
-}
 .logInfo{
     display: flex;
     flex-direction: column;
     margin-left: 30px;
-    justify-items: center;
-    justify-content: center;
 }
 .logInfo h2{
     width: fit-content;
@@ -122,9 +117,9 @@ label{
 .log-btn{
     display: flex;
     align-items: center;
+    justify-items: center;
     justify-content: center;
-    margin: 50px 5px 5px 0px;
-    width: 420px;
+    width: 220px;
     height: 40px;
     font-size: 18px;
     font-weight: 600;
@@ -134,17 +129,25 @@ label{
     border-radius: 2px;
     color: rgba(240, 248, 255, 0.833);
     margin-bottom: 10px;
+    margin-left: 90px;
+    margin-top: 50px;
 }
 .log-btn:hover{
     background-color: rgb(240, 87, 60);
 }
 .log-det{
     font-size: 12px;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: -40px;
 }
 .log-det a{
     font-size:14px;
     text-decoration: none;
     margin-left: 5px;
+
 }
 /*Responsive */
 @media (max-width: 930px) {
@@ -181,7 +184,7 @@ form{
     width:50vh;
 }
 .log-btn{
-    width:50vh;
+    margin-left: 35px;
 }
 }
 @media (max-width: 414px) {
@@ -202,13 +205,13 @@ form{
     margin-right: 30px;
 }
 .log-btn{
-    margin-left: 40px; 
-    width:30vh;
+    margin-left: 65px; 
+    width:35vh;
 }
 .log-det{
-    margin-left: 40px; 
+    margin-left: 60px; 
     width: max-content;
-    margin-right: 100px;
+    margin-right: 90px;
 }
 }
 @media (max-width: 390px) {
@@ -229,11 +232,11 @@ form{
     margin-right: 30px;
 }
 .log-btn{
-    margin-left: 40px; 
+    margin-left: 60px; 
     width:30vh;
 }
 .log-det{
-    margin-left: 40px; 
+    margin-left: 70px; 
     width: max-content;
     margin-right: 100px;
 }

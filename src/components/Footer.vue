@@ -29,6 +29,7 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: 14px;
     }
     .form-input{
         width: calc(430px);
